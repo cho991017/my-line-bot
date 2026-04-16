@@ -31,7 +31,7 @@ def handle_message(event):
     reply_token = event.reply_token
 
     # 욕설 패턴 감지
-    bad_pattern = r"[ㅅㅆ][\s\d\Wㅏ-ㅣ]*ㅂ|[시씨][\s\d\Wㅏ-ㅣ]*발"
+    bad_pattern = r"[ㅅㅆ][\s\d\W가-힣]*ㅂ|[시씨][\s\d\W가-힣]*발"
     
     if re.search(bad_pattern, user_msg) and user_id not in white_list:
         line_bot_api.reply_message(
