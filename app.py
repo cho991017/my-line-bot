@@ -42,7 +42,13 @@ def handle_message(event):
             ]
         )
     elif "/뚝증정식" in user_msg:
-        line_bot_api.reply_message(reply_token, TextSendMessage(text="진리채움 뚝증정식 배달 완료! 🍜"))
+        line_bot_api.reply_message(reply_token, TextSendMessage(text="⭑𓂃. ⋆🅲🅻🅴🅰🅽 🆂🅴🆇 ೀ *
+
+ ᐢ⑅ᐢ⠀⠀ᐢ⑅ᐢ⠀⠀ᐢ⑅ᐢ
+(˶• . •(˶• . •˶)• . •˶)
+/つ　/⠀ ⛑️⠀\⠀Ｃ\
+
+-`진 리 채 윰 뚝 증 정 식´-"))
 
 if __name__ == "__main__":
     # Render가 지정하는 포트를 사용하도록 설정
